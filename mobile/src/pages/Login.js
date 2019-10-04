@@ -8,6 +8,7 @@ export default function Login({ navigation }) {
     const [techs, setTechs] = useState('');
 
     async function handleSubmit() {
+        console.log('entrou');
         const response = await api.post('/sessions', {
             email
         })
